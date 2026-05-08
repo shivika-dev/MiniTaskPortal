@@ -1,0 +1,21 @@
+name: MiniTaskPortal CI
+
+on:
+  push:
+    branches:
+      - dev
+      - main
+      - feature/**
+
+jobs:
+  check-project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Show Project Structure
+        run: |
+          echo "MiniTaskPortal workflow running"
+          ls
