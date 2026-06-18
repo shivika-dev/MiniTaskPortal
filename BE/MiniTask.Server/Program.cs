@@ -1,1 +1,0 @@
-Console.WriteLine("MiniTask API starting...");
